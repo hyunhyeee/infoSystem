@@ -1,0 +1,49 @@
+.checkCourseinput {
+    position: absolute;
+    width:100%;
+    left: 200px;
+    top: 60px;
+    font-size:35px;
+    color:#046daa;
+    font-style:italic;
+}
+
+.checkCourse {
+    position: absolute;
+    display:block;
+    width:200px;
+    left: 230px;
+    top: 230px;
+    padding:30px;
+    font-size:20px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    text-decoration-line: none;
+    background-color:#fff8ed;
+}
+
+.checkCourse:hover {
+    background-color:#fadfa28c;
+    color:#ff6565;
+}
+
+.addCourse {
+    position: absolute;
+    display:block;
+    width:200px;
+    left: 600px;
+    top: 230px;
+    padding:30px;
+    font-size:20px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    text-decoration-line: none;
+    background-color:#fff8ed;
+}
+
+.addCourse:hover {
+    background-color:#fadfa28c;
+    color:#ff6565;
+}

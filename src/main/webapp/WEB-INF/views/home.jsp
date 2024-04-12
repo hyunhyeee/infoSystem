@@ -14,12 +14,13 @@
           href="${pageContext.request.contextPath}/resources/css/home.css" >
   </head>
   <body>
-  <p> <a href="${pageContext.request.contextPath}/creditByGrade"> 학년별 이수학점 조회 </a></p>
-  <p> <a href="${pageContext.request.contextPath}/signUpCourse"> 수강신청 하기 </a></p>
-  <p> <a href="${pageContext.request.contextPath}/courseInquiry"> 수강신청 과목 조회 </a></p>
+  <p class="maintext">학사 정보 시스템</p>
+  <p> <a class="page1" href="${pageContext.request.contextPath}/creditByGrade"> 학년별 이수학점 조회 </a></p>
+  <p> <a class="page2" href="${pageContext.request.contextPath}/signUpCourse"> 수강신청 하기 </a></p>
+  <p> <a class="page3" href="${pageContext.request.contextPath}/courseInquiry"> 수강신청 과목 조회 </a></p>
 
   <c:if test="${pageContext.request.userPrincipal.name != null}">
-    <a href="javascript:document.getElementById('logout').submit()">로그아웃하기</a>
+    <a class="logouttext" href="javascript:document.getElementById('logout').submit()">로그아웃하기</a>
   </c:if>
 
   <form id="logout"  action="<c:url value="/logout" />"method="post">

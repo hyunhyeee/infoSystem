@@ -12,9 +12,10 @@
 <head>
     <title>Title</title>
     <link rel="stylesheet" type="text/css"
-          href="${pageContext.request.contextPath}/resources/css/main.css" >
+          href="${pageContext.request.contextPath}/resources/css/signUpCourse.css" >
 </head>
 <body>
+<p class="textinput">수강신청하기</p>
 <sf:form method="post" action="${pageContext.request.contextPath}/registerCourse" modelAttribute="courseInquiry">
     <table class="formtable">
         <tr>

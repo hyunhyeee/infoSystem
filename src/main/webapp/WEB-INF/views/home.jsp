@@ -10,6 +10,8 @@
 <html>
   <head>
     <title>$Title$</title>
+    <link rel="stylesheet" type="text/css"
+          href="${pageContext.request.contextPath}/resources/css/home.css" >
   </head>
   <body>
   <p> <a href="${pageContext.request.contextPath}/creditByGrade"> 학년별 이수학점 조회 </a></p>

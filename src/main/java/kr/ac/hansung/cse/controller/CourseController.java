@@ -22,4 +22,28 @@ public class CourseController {
 
         return "courses";
     }
+
+    @GetMapping("/viewDetails/23-1")
+    public String showCourses231(Model model) {
+        List<Course> courses = courseService.getAllCourse();
+        model.addAttribute("courses231", courses);
+
+        return "viewDetails231";
+    }
+
+    @GetMapping("/viewDetails/23-2")
+    public String showCourses232(Model model) {
+        List<Course> courses = courseService.getAllCourse();
+        model.addAttribute("courses232", courses);
+
+        return "viewDetails232";
+    }
+
+    @GetMapping("/viewDetails/24-1")
+    public String showCourses241(Model model) {
+        List<Course> courses = courseService.getAllCourse();
+        model.addAttribute("courses241", courses);
+
+        return "viewDetails241";
+    }
 }

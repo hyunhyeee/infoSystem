@@ -1,3 +1,4 @@
+
 package kr.ac.hansung.cse.dao;
 
 import kr.ac.hansung.cse.model.Course;
@@ -37,13 +38,13 @@ public class CourseDao {
 
                         Course course= new Course();
 
-                        course.setYear(rs.getString("year"));
-                        course.setSemester(rs.getString("semester"));
+                        course.setYear(rs.getInt("year"));
+                        course.setSemester(rs.getInt("semester"));
                         course.setSub_Code(rs.getString("sub_Code"));
                         course.setSub_Name(rs.getString("sub_Name"));
                         course.setSub_Classification(rs.getString("sub_Classification"));
                         course.setProfessor(rs.getString("professor"));
-                        course.setCredit(rs.getString("credit"));
+                        course.setCredit(rs.getInt("credit"));
 
                         return  course;
                     }
@@ -62,55 +63,18 @@ public class CourseDao {
 
                 Course course= new Course();
 
-                course.setYear(rs.getString("year"));
-                course.setSemester(rs.getString("semester"));
+                course.setYear(rs.getInt("year"));
+                course.setSemester(rs.getInt("semester"));
                 course.setSub_Code(rs.getString("sub_Code"));
                 course.setSub_Name(rs.getString("sub_Name"));
                 course.setSub_Classification(rs.getString("sub_Classification"));
                 course.setProfessor(rs.getString("professor"));
-                course.setCredit(rs.getString("credit"));
+                course.setCredit(rs.getInt("credit"));
 
                 return course;
             }
         });
     }
-
-
-//    // Crud method 생성
-//    public boolean insert(Course course) {
-//
-//        String year= course.getYear();
-//        String semester= course.getSemester();
-//        String sub_Code = course.getSub_Code();
-//        String sub_Name = course.getSub_Name();
-//        String sub_Classification = course.getSub_Classification();
-//        String professor = course.getProfessor();
-//        String credit = course.getCredit();
-//
-//        String sqlStatement= "insert into courses (year, semester, sub_Code, sub_Name, sub_Classification, professor, credit) values (?,?,?,?,?,?,?)";
-//
-//        return (jdbcTemplate.update(sqlStatement, new Object[] {year, semester, sub_Code, sub_Name, sub_Classification, professor, credit}) == 1);
-//    }
-//
-//    // crUd method 업데이트
-//    public boolean update(Course course) {
-//
-//        String year= course.getYear();
-//        String semester= course.getSemester();
-//        String sub_Code = course.getSub_Code();
-//        String sub_Name = course.getSub_Name();
-//        String sub_Classification = course.getSub_Classification();
-//        String professor = course.getProfessor();
-//        String credit = course.getCredit();
-//
-//        String sqlStatement= "update courses set year=?, semester=?, sub_Code=?, sub_Name=?, sub_Classification=?, professor=?, credit=?, where sub_Code=?";
-//
-//        return (jdbcTemplate.update(sqlStatement, new Object[] {year, semester, sub_Code, sub_Name, sub_Classification, professor, credit}) == 1);
-//    }
-//
-//    //cruD method 삭제
-//    public boolean delete(String sub_Code) {
-//        String sqlStatement= "delete from courses where sub_Code=?";
-//        return (jdbcTemplate.update(sqlStatement, new Object[] {sub_Code}) == 1);
-//    }
 }
+
+

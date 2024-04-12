@@ -26,6 +26,7 @@
         <security:intercept-url pattern="/creditByGrade/**" access="hasRole('ROLE_USER')"/>
         <security:intercept-url pattern="/signUpCourse/**" access="hasRole('ROLE_USER')"/>
         <security:intercept-url pattern="/courseInquiry/**" access="hasRole('ROLE_USER')"/>
+        <security:intercept-url pattern="/viewDetails/**" access="hasRole('ROLE_USER')"/>
         <security:intercept-url pattern="/**" access="denyAll()"/>
 
         <security:form-login login-page="/login" />

@@ -17,7 +17,7 @@ public class CourseInquiry {
     @Size(min=2, message = "Year cannot be empty.")
     private String year;                   //수강년도
 
-    @Size(min=2, message = "Semester cannot be empty.")
+    @NotEmpty(message = "Credit cannot be empty.")
     private String semester;               //수강학기
 
     @NotEmpty(message = "Subject Code cannot be empty.")

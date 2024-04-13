@@ -9,7 +9,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>학년별 이수 과목 조회</title>
 </head>
 <body>
 <table border="1" width="700px" height="300px">
@@ -62,10 +62,9 @@
         <td><a href="${pageContext.request.contextPath}/viewDetails/24-1"> 24-1 상세보기 </a></td>
     </tr>
     <tr align="center" height="20%">
-        <td></td>
+        <td>총계</td>
         <td></td>
         <td>
-            총계
             <c:set var="total4" value="0" />
             <c:set var="total4" value="${total1 + total2 + total3}" />
             ${total4}

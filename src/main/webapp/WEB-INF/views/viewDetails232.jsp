@@ -9,7 +9,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>23년도 2학기 수강 내역</title>
 </head>
 <body>
 <table border="1" width="800px" height="500px">

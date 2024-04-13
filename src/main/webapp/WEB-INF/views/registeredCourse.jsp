@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>수강신청 확인</title>
     <link rel="stylesheet" type="text/css"
           href="${pageContext.request.contextPath}/resources/css/registeredCourse.css" >
 </head>

@@ -1,7 +1,7 @@
 .maintext {
     position: absolute;
     width:400px;
-    left: 30%;
+    left: 43%;
     top: 55px;
     font-size:40px;
     color:#037cc2;
@@ -11,7 +11,7 @@
 .page1 {
     position: absolute;
     display:block;
-    width:300px;
+    width:330px;
     left: 40%;
     top: 250px;
     padding:30px;
@@ -31,7 +31,7 @@
 .page2 {
     position: absolute;
     display:block;
-    width:300px;
+    width:330px;
     left: 40%;
     top: 400px;
     padding:30px;
@@ -50,7 +50,7 @@
 .page3 {
     position: absolute;
     display:block;
-    width:300px;
+    width:330px;
     left: 40%;
     top: 550px;
     padding:30px;
@@ -71,7 +71,7 @@
     display:block;
     width:150px;
     padding:5px;
-    left: 68%;
+    left: 80%;
     top: 110px;
     font-size:20px;
     font-style:italic;

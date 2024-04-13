@@ -9,14 +9,14 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
   <head>
-    <title>$Title$</title>
+    <title>학사 정보 시스템</title>
     <link rel="stylesheet" type="text/css"
           href="${pageContext.request.contextPath}/resources/css/home.css" >
   </head>
   <body>
   <p class="maintext">학사 정보 시스템</p>
-  <p> <a class="page1" href="${pageContext.request.contextPath}/creditByGrade"> 학년별 이수학점 조회 </a></p>
-  <p> <a class="page2" href="${pageContext.request.contextPath}/signUpCourse"> 수강신청 하기 </a></p>
+  <p> <a class="page1" href="${pageContext.request.contextPath}/creditByGrade"> 학년별 이수 과목 조회 </a></p>
+  <p> <a class="page2" href="${pageContext.request.contextPath}/signUpCourse"> 수강신청 </a></p>
   <p> <a class="page3" href="${pageContext.request.contextPath}/courseInquiry"> 수강신청 과목 조회 </a></p>
 
   <c:if test="${pageContext.request.userPrincipal.name != null}">
